@@ -81,3 +81,12 @@ input.search::-webkit-input-placeholder{
 .top-btns>.btn:focus{
     outline: none;
 }
+.table-billing{
+    padding-top: 25px;
+    padding-left: 440px;
+}
+.table-billing>table{
+    border-top:none;
+    border-bottom:1px solid #399ee5;
+    color: #399ee5;  
+}
