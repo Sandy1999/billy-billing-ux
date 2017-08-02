@@ -86,7 +86,10 @@ input.search::-webkit-input-placeholder{
     padding-left: 440px;
 }
 .table-billing>table{
-    border-top:none;
+    border: none;
     border-bottom:1px solid #399ee5;
     color: #399ee5;  
+}
+.table-billing>table>th{
+    border: none;
 }
