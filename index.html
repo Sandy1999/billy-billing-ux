@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Billys Billing</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,300" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <header>
+        <h3 id="hd-top">Create Invoice</h3>
+            <div class="top-btns">
+                <button class="btn" id="btn-approve">Approve</button>
+                <button class="btn">Save As Draft</button>
+                <button class="btn">More <img src="images/down-arrow-more.png" id="more-arrow" alt=""></button>
+            </div>
+        <hr id="top">
+      </header>
+      <article>
+          <section>
+              <div class="col-md-3 side-nav">
+                <img src="images/logo.png" id="logo" alt="">
+                <div class="input-group search-bar">
+                    <label for="search"><i class="fa fa-search"></i></label>
+                    <input type="text" name="search" placeholder="Search" class="search pull-right">
+                </div>
+                <div class="nav-bar">
+                    <ul class="nav-main nav">
+                      <li><a href="#"><img src="images/invoices.png" id="img-invoices" alt="">Invoices</a></li>
+                      <li><a href="#"><img src="images/bills.png" id="img-bills" alt="">Bills</a></li>
+                      <li><a href="#"><img src="images/contacts.png" id="img-contacts" alt="">Contacts</a></li>
+                      <li><a href="#"><img src="images/accounting.png" id="img-accounts" alt="">Accounting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 customer">
+                <select name="customer" id="customer" class="input-dropdown form-control js-example-basic-multiple"> 
+                <option value="1">Customer</option>
+                <option value="1">Billy</option>
+                <option value="1">Select</option>
+                <option value="1">True</option>
+                <option value="1">Caret</option>
+                <option value="1">Abhishek</option>
+                <option value="1">Trump</option>
+                </select>
+                <a href="#"><i class="fa fa-comment-o"></i>Add Message</a>
+            </div>
+            <div class="col-md-3 upload-file">
+                <label for="file">
+                    <input type="file" name="file" class="file-input">
+                    <span></span>
+                </label>
+            </div>
+          </section>
+      </article>
+       <footer>
+      </footer>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/select2.full.min.js"></script>
+        <script src="js/script.js"></script>
+  </body>
+</html>
