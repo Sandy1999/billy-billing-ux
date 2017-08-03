@@ -71,14 +71,13 @@ input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;}
     color: #d1d1d1;
 }
 .upload-file{
-    padding-left: 225px; padding-top: 20px;
+    padding-left: 120px; padding-top: 20px;  
 }
-.upload-file>input{
+.upload-file > label > input{
     display: none;
 }
-.upload-file>input +span{
-    border: 2px dotted #d1d1d1;
-}
+.upload-file>label{border: 2px dashed #d1d1d1; border-radius: 3px;}
+.upload-file>label>span{width: 100%;}
 .top-btns{padding-top: 10px; padding-left: 1050px;}
 .top-btns>.btn{
     color: #ffffff; background: #8497a5;
@@ -99,7 +98,8 @@ input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;}
 .bill-row{
     border: none;
     border-bottom: 1px solid #edf3f7;
-    border-spacing:0;  
+    border-spacing:0;
+    margin: 10px 0;  
 }
 .table-billing>table>tr>td{
     padding: 0px ;
@@ -116,3 +116,6 @@ input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;}
 .tax>.currency>label{font-weight: 300; font-size: 14px; padding-right: 5px; float: left;}
 .tax>.currency>#currency{font-size: 14px; height: auto; padding: 0px; border-radius:3px; width: auto; border: 1px solid #d1d1d1; float: left;}
 .tax>.country>label,#currency{display: inline-block;}
+#attachmodal{
+    top:30%;
+}
