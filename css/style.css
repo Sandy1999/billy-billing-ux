@@ -48,14 +48,16 @@ input.search::-webkit-input-placeholder{
 }
 #img-invoices,#img-bills,#img-contacts,#img-accounts{ padding-right: 20px; padding-left: 20px; padding-bottom: 3px;}
 .input-dropdown{
-    max-width: 100%; width: 59%; display: block; padding:7px 8px; color: #d1d1d1; 
+    max-width: 100%; width: 100%; display: block; padding:7px 8px; color: #d1d1d1; 
     -webkit-appearance:none; -ms-progress-appearance: none; -moz-appearance: none; background: url(../images/down-arrow.png) no-repeat ; background-position: 96% 50%;
 }
 .dropdown-product{
-    width: 90%;
+    width: 100%;
 }
 .input-text{margin-left: 0px;}
-.input[type="number"]::-moz-focus-inner{-moz-appearance: none; -webkit-appearance: none; -ms-progress-appearance:none; }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{-webkit-appearance: none;}
+input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;} 
 .customer{
     padding-top: 19px; margin-left: 423px;
 }
@@ -88,12 +90,22 @@ input.search::-webkit-input-placeholder{
 }
 .table-billing{
     padding-top: 80px;
-    padding-left: 400px;
+    margin-left: 405px;
 }
 .table-billing>table>thead>tr>th{
     border-bottom:1px solid #399ee5;
     color: #399ee5;  
 }
-.table-billing>table>th{
+.bill-row{
     border: none;
+    border-bottom: 1px solid #edf3f7;
+    border-spacing:0;  
 }
+.table-billing>table>tr>td{
+    padding: 0px ;
+}
+#product-head{width: 250px;}
+#description-head{width:  300px;}
+#qty-head{width: 75px;}
+#price-head{width: 100px;}
+#total-head{width:70px;}

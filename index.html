@@ -48,7 +48,7 @@
                 <option value="">Abhishek</option>
                 <option value="">Trump</option>
                 </select>
-                <a href="#"><i class="fa fa-comment-o"></i>Add Message</a>
+                <a href="#"><i class="fa fa-comment-o"></i> Add Message</a>
             </div>
             <div class="col-md-3 upload-file">
                 <label for="file">
@@ -56,19 +56,18 @@
                     <span></span>
                 </label>
             </div>
-            <div class="col-md-12">
-                <div class="table-billing table-responsive">
-                    <table class="table">
+            <div class="col-md-8 table-billing">
+                    <table class="table table-responsive" >
                         <thead>
                             <tr>
-                                <th>Product</th>
-                                <th>Description</th>
-                                <th>Qty</th>
-                                <th>Unit Price</th>
-                                <th>Total</th>
+                                <th id="product-head">Product</th>
+                                <th id="description-head">Description</th>
+                                <th id="qty-head">Qty</th>
+                                <th id="price-head">Unit Price</th>
+                                <th id="total-head">Total</th>
                             </tr> 
                         </thead>
-                        <tr>
+                        <tr class="bill-row">
                             <td>
                                 <select name="product" id="" class="form-control dropdown-product input-dropdown">
                                     <option value="">Choose Product</option>
@@ -76,10 +75,13 @@
                             </td>
                             <td><input type="text" placeholder="Optional Description" class="form-control input-text"></td>
                             <td><input type="number"class="form-control input-text input-number"></td>
+                            <td><input type="text" class="form-control input-text input-price"></td>
+                            <td>0.00</td>
                         </tr>
                     </table>
+                    <a href="#">+ Add Product Line</a> &nbsp;
+                    <a href="#" target="_blank"><i class="fa fa-paperclip fa-flip-horizontal"></i> Attach File</a>
                 </div>
-            </div>
           </section>
       </article>
        <footer>
