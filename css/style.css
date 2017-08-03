@@ -109,3 +109,10 @@ input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;}
 #qty-head{width: 75px;}
 #price-head{width: 100px;}
 #total-head{width:70px;}
+.tax{ margin-top: 0px; float: right;}
+.tax>span{display: block; padding-top: 5px;}
+.tax>h5{direction: rtl;}
+.tax>hr{margin: 0px; padding: 0px;}
+.tax>.currency>label{font-weight: 300; font-size: 14px; padding-right: 5px; float: left;}
+.tax>.currency>#currency{font-size: 14px; height: auto; padding: 0px; border-radius:3px; width: auto; border: 1px solid #d1d1d1; float: left;}
+.tax>.country>label,#currency{display: inline-block;}
