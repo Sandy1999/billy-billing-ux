@@ -80,7 +80,7 @@
                         </tr>
                     </table>
                     <a href="#">+ Add Product Line</a> &nbsp;
-                    <a href="#" target="_blank"><i class="fa fa-paperclip fa-flip-horizontal"></i> Attach File</a>
+                     <a  data-toggle="modal" role="dialog" data-target="#attachmodal"><i class="fa fa-paperclip fa-flip-horizontal"></i> Attach File</a> 
                     <div class="tax">
                         <h5>Total ex.VAT</h5>
                         <h5>VAT</h5>
@@ -103,9 +103,22 @@
       </article>
        <footer>
       </footer>
-        <script src="js/jquery-3.2.1.min.js"></script>
+        <div class="modal" id="attachmodal" role="dialog">
+           <div class="modal-dialog">
+               <div class="modal-content">
+                   <div class="modal-header">
+                       <button class="close" data-dismiss="modal">&times;</button>
+                       <h3 class="modal-title">Attach Your File Here</h3>
+                   </div>
+                    <div class="modal-body">
+                        <input type="file" class="form-control">
+                    </div>
+               </div>
+           </div>
+       </div> 
+       <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/select2.full.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/script.js"></script> 
   </body>
 </html>
