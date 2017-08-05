@@ -1,0 +1,7 @@
+#login-hd{float: none;}
+form.login>span{display: block; padding-top:10px;}
+.login-form{margin-left: 450px;}
+.login-form>form>.fa{color: #399ee5; top: 0px;}
+.login>.input-text,.fa{display: inline-block;}
+.input-text{width: auto; position: relative;}
+.fa{position: absolute; padding-top:20px; }

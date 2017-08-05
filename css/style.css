@@ -7,12 +7,12 @@ body{width: 100%; height: 100%; overflow-x: hidden; font-family: 'Raleway', sans
     padding: 0px;
     position: fixed;
 }
-#hd-top{
+.hd-top{
     color: #8a9297;
     padding-left:277px;
     font-weight: 300;
     margin-top: 16px;
-    position: fixed; 
+    float: left; 
 }
 #top{
     margin-top: 14px; padding-left:277px; 
@@ -54,7 +54,6 @@ input.search::-webkit-input-placeholder{
 .dropdown-product{
     width: 100%;
 }
-.input-text{margin-left: 0px;}
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button{-webkit-appearance: none;}
 input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;} 
@@ -70,14 +69,23 @@ input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;}
 .customer>a:hover{
     color: #d1d1d1;
 }
-.upload-file{
+.type-bill{
     padding-left: 120px; padding-top: 20px;  
 }
-.upload-file > label > input{
-    display: none;
+.type-bill>label{color: #4ba7d7;}
+.type-bill>label>input[type="radio"]::after{
+    width: 15px;height: 15px; border-radius: 15px;
+    top: -2px; left: -1px; position: relative; background-color: #d1d1d1;
+    content: ''; display: inline-block; visibility: visible; border: 2px solid white;
 }
-.upload-file>label{border: 2px dashed #d1d1d1; border-radius: 3px;}
-.upload-file>label>span{width: 100%;}
+.type-bill>label>input[type="radio"]:checked::after{
+    width: 15px;height: 15px; border-radius: 15px;
+    top: -2px; left: -1px; position: relative; background-color: #399ee5;
+    content: ''; display: inline-block; visibility: visible; border: 2px solid white;
+}
+.modal-upload>label>input{display: none;}
+.modal-upload>label{border-radius: 3px; color: #4ba7d7;}
+.modal-upload>label>span{width: 100%;}
 .top-btns{padding-top: 10px; padding-left: 1050px;}
 .top-btns>.btn{
     color: #ffffff; background: #8497a5;
@@ -88,7 +96,7 @@ input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;}
     outline: none;
 }
 .table-billing{
-    padding-top: 80px;
+    padding-top: 120px;
     margin-left: 405px;
 }
 .table-billing>table>thead>tr>th{

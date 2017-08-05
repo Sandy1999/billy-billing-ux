@@ -13,7 +13,7 @@
   </head>
   <body>
       <header>
-        <h3 id="hd-top">Create Invoice</h3>
+        <h3 class="hd-top">Create Invoice</h3>
             <div class="top-btns">
                 <button class="btn" id="btn-approve">Approve</button>
                 <button class="btn">Save As Draft</button>
@@ -50,13 +50,14 @@
                 </select>
                 <a href="#"><i class="fa fa-comment-o"></i> Add Message</a>
             </div>
-            <div class="col-md-3 upload-file">
-                <label for="file">
-                    <input type="file" name="file" id="file" class="file-input">
-                    <span>
-                        <img src="images/upload.png" alt="">Add Your Image here
-                    </span>
-                </label>
+            <div class="col-md-3 type-bill">
+                <label for="work-type1"><input type="radio" id="work-type1" name="work-type" class="radio-btn">Hourly</label>
+                <label for="work-type2"><input type="radio" id="work-type2" name="work-type" class="radio-btn">Quantity</label>
+                <select name="billtype" id="billpaid" class="input-dropdown form-control">
+                    <option value="">Choose Payment</option>
+                    <option value="">Paid</option>
+                    <option value="">UnPaid</option>
+                </select>
             </div>
             <div class="col-md-8 table-billing">
                     <table class="table-responsive table" colspacing="0px">
@@ -112,8 +113,13 @@
                        <button class="close" data-dismiss="modal">&times;</button>
                        <h3 class="modal-title">Attach Your File Here</h3>
                    </div>
-                    <div class="modal-body">
-                        <input type="file" class="form-control">
+                    <div class="modal-body modal-upload">
+                        <label for="file">
+                            <input type="file" name="file" id="file" class="file-input">
+                            <span>
+                                <img src="images/upload.png" alt="">Add Your Files here
+                            </span>
+                        </label>
                     </div>
                </div>
            </div>
