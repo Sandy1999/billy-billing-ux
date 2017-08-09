@@ -60,6 +60,7 @@ input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;}
 .customer{
     padding-top: 19px; margin-left: 423px;
 }
+.customer>.input-dropdown{max-width: 70%; width: 100%;}
 .input-dropdown:focus{
     outline: none;
 }
@@ -127,3 +128,4 @@ input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;}
 #attachmodal{
     top:30%;
 }
+#upload-img{padding-right: 10px;}
