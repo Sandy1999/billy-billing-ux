@@ -73,8 +73,21 @@ input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;}
 .type-bill{
     padding-left: 120px; padding-top: 20px;  
 }
-.type-bill>label{color: #4ba7d7;}
-.type-bill>label>input[type="radio"]::after{
+ .type-bill>label{color: #4ba7d7;} 
+ .type-bill>label>input{display: none;}
+ .type-bill>label>input +span{
+     content: ""; width: 15px; height: 15px; border: 1px solid #4ba7d7;
+     position: relative; float: left; border-radius: 15px;
+ }
+ .type-bill>label>input + span::before{
+     content: ""; width: 0; height: 0; position: absolute; top: 50%;
+     left: 50%; border-radius:15px; transform: translate(-50%,-50%); float: left;  transition: all .3s ease-in-out;background: #4ba7d7;
+ }
+.type-bill>label>input:checked + span::before{
+    width: 8px;
+    height: 8px;
+}
+/* .type-bill>label>input[type="radio"]::after{
     width: 15px;height: 15px; border-radius: 15px;
     top: -2px; left: -1px; position: relative; background-color: #d1d1d1;
     content: ''; display: inline-block; visibility: visible; border: 2px solid white;
@@ -83,7 +96,7 @@ input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;}
     width: 15px;height: 15px; border-radius: 15px;
     top: -2px; left: -1px; position: relative; background-color: #399ee5;
     content: ''; display: inline-block; visibility: visible; border: 2px solid white;
-}
+} */
 .modal-upload>label>input{display: none;}
 .modal-upload>label{border-radius: 3px; color: #4ba7d7;}
 .modal-upload>label>span{width: 100%;}
