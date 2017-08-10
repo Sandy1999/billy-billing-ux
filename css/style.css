@@ -76,12 +76,12 @@ input[type="number"]{ -moz-appearance: textfield; -ms-progress-appearance:none;}
  .type-bill>label{color: #4ba7d7;} 
  .type-bill>label>input{display: none;}
  .type-bill>label>input +span{
-     content: ""; width: 15px; height: 15px; border: 1px solid #4ba7d7;
+     width: 15px; height: 15px; border: 1px solid #4ba7d7;
      position: relative; float: left; border-radius: 15px;
  }
  .type-bill>label>input + span::before{
-     content: ""; width: 0; height: 0; position: absolute; top: 50%;
-     left: 50%; border-radius:15px; transform: translate(-50%,-50%); float: left;  transition: all .3s ease-in-out;background: #4ba7d7;
+     content: ""; width: 0; height: 0; position: absolute; top: 48%;
+     left: 49%; border-radius:50%; transform: translate(-50%,-50%); float: left;  transition: all .3s ease-in-out;background: #4ba7d7; text-align: center;
  }
 .type-bill>label>input:checked + span::before{
     width: 8px;
