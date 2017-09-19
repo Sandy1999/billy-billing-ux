@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Billys Billing</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,9 +15,9 @@
       <header>
         <h3 class="hd-top">Create Invoice</h3>
             <div class="top-btns">
-                <button class="btn" id="btn-approve">Approve</button>
-                <button class="btn">Save As Draft</button>
-                <button class="btn">More <img src="images/down-arrow-more.png" id="more-arrow" alt=""></button>
+                <button class="btn" id="btn-approve">APPROVE</button>
+                <button class="btn" id="btn-sv-draft">SAVE AS DRAFT</button>
+                <button class="btn" id="btn-more">MORE <img src="images/down-arrow-more.png" id="more-arrow" alt=""></button>
             </div>
         <hr id="top">
       </header>
@@ -82,8 +82,8 @@
                             <td>0.00</td>
                         </tr>
                     </table>
-                    <a href="#">+ Add Product Line</a> &nbsp;
-                     <a  data-toggle="modal" role="dialog" data-target="#attachmodal"><i class="fa fa-paperclip fa-flip-horizontal"></i> Attach File</a> 
+                    <a class="table-links" href="#"><i class="fa fa-plus"></i>Add Product Line</a> &nbsp;
+                    <a data-toggle="modal" class="table-links" role="dialog" data-target="#attachmodal"><i class="fa fa-paperclip fa-flip-horizontal"></i> Attach File</a> 
                     <div class="tax">
                         <h5>Total ex.VAT</h5>
                         <h5>VAT</h5>
